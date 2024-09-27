@@ -27,7 +27,7 @@ Create a `.env` file there and add the following environment variables:
 - Step 2: Start the development server
 
   ```bash
- npm run dev
+  npm run dev
   ```
 
 - Step 3: Open the browser and navigate to [http://localhost:5173](http://localhost:5173)
