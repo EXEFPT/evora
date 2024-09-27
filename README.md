@@ -27,7 +27,7 @@
 
   ```bash
   cd evora
-  yarn
+  npm i
   ```
 
 ## Source code
