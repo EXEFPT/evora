@@ -4,6 +4,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/EXEFPT/evora)
 ![GitHub repo size](https://img.shields.io/github/repo-size/EXEFPT/evora)
 ![GitHub License](https://img.shields.io/github/license/EXEFPT/evora)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EXEFPT_evora&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EXEFPT_evora)
 
 > A foundation connects customers with event organizers quickly through detailed online booking.
 
@@ -40,4 +41,4 @@
 
 ## Licenses
 
-- [bookish](https://github.com/EXEFPT/evora) is licensed under the [GPL-3.0 license](LICENSE)
+- [evora](https://github.com/EXEFPT/evora) is licensed under the [GPL-3.0 license](LICENSE)
