@@ -49,8 +49,8 @@
                 <div class="card mt-5">
                     <div class="card-header text-center">
                         <h3>Đăng Ký</h3>
-                        </div>
-                        <div class="card-body">
+                    </div>
+                        <div class="card-body mt-3">
                             <!-- Tabs -->
                             <ul class="nav nav-tabs" id="registerTabs" role="tablist">
                                 <li class="nav-item">
@@ -63,14 +63,22 @@
                             <div class="tab-content" id="registerTabsContent">
                                 <!-- Customer Tab -->
                                 <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="customer-tab">
-                                    <form>
+                                    <form class="mt-4 mb-4">
                                         <div class="mb-3">
-                                            <label for="customer-name" class="form-label">Tên</label>
+                                            <label for="customer-name" class="form-label">Họ và Tên</label>
                                             <input type="text" class="form-control" id="customer-name" placeholder="Nhập tên">
                                         </div>
                                         <div class="mb-3">
                                             <label for="customer-email" class="form-label">Email</label>
                                             <input type="email" class="form-control" id="customer-email" placeholder="Nhập email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customer-phone" class="form-label">Số điện thoại</label>
+                                            <input type="text" class="form-control" id="customer-phone" placeholder="Nhập số điện thoại">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customer-address" class="form-label">Địa chỉ</label>
+                                            <input type="text" class="form-control" id="customer-address" placeholder="Nhập địa chỉ">
                                         </div>
                                         <div class="mb-3">
                                             <label for="customer-password" class="form-label">Mật khẩu</label>
@@ -85,7 +93,7 @@
                                 </div>
                                 <!-- Organization Tab -->
                                 <div class="tab-pane fade" id="organization" role="tabpanel" aria-labelledby="organization-tab">
-                                    <form>
+                                    <form class="mt-4 mb-4">
                                         <div class="mb-3">
                                             <label for="org-name" class="form-label">Tên Đơn vị</label>
                                             <input type="text" class="form-control" id="org-name" placeholder="Nhập tên đơn vị">
@@ -93,6 +101,14 @@
                                         <div class="mb-3">
                                             <label for="org-email" class="form-label">Email</label>
                                             <input type="email" class="form-control" id="org-email" placeholder="Nhập email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="org-phone" class="form-label">Số điện thoại</label>
+                                            <input type="text" class="form-control" id="org-phone" placeholder="Nhập số điện thoại">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="org-address" class="form-label">Địa chỉ</label>
+                                            <input type="text" class="form-control" id="org-address" placeholder="Nhập địa chỉ">
                                         </div>
                                         <div class="mb-3">
                                             <label for="org-password" class="form-label">Mật khẩu</label>
@@ -108,7 +124,7 @@
                             </div>
                         </div>
                     <div class="card-footer text-center">
-                        <a href="login.html">Đã có tài khoản? Đăng Nhập</a>
+                        <a href="login.html">Đã có tài khoản? <strong>Đăng Nhập Ngay</strong></a>
                     </div>
                 </div>
             </div>
