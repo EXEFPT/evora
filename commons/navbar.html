@@ -1,30 +1,15 @@
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-    <a href="index.html" class="navbar-brand d-block d-lg-none">
-        <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>Evora</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto mx-lg-auto py-0">
+        <div class="navbar-nav mx-auto py-0">
             <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
             <a href="menu.html" class="nav-item nav-link">Danh sách Sự kiện</a>
             <a href="team.html" class="nav-item nav-link">Đơn vị tổ chức</a>
             <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
             <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+            <div class="navbar-nav ms-auto">
+                <a href="login.html" class="nav-item nav-link">Đăng Nhập</a>
+                <a href="register.html" class="nav-item nav-link">Đăng Ký</a>
+            </div>
         </div>
     </div>
 </nav>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.nav-item.nav-link');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(event) {
-                navLinks.forEach(nav => nav.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    });
-</script>

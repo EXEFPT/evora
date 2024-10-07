@@ -9,7 +9,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="evora.ico" rel="icon">
+    <link href="../img/evora.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,20 +21,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Topbar Start -->
     <div id="topbar"></div>
     <script>
-        fetch('./commons/topbar.html')
+        fetch('../commons/topbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('topbar').innerHTML = data;
@@ -42,18 +42,17 @@
     </script>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
     <div id="navbar"></div>
     <script>
-        fetch('./commons/navbar.html')
+        fetch('../commons/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
-    
+
                 // Determine the current page
                 const currentPage = window.location.pathname.split('/').pop();
-    
+
                 // Add active class to the corresponding nav link
                 const navLinks = document.querySelectorAll('.nav-item.nav-link');
                 navLinks.forEach(link => {
@@ -63,7 +62,7 @@
                         link.classList.remove('active');
                     }
                 });
-    
+
                 // Add click event listeners to update active class on click
                 navLinks.forEach(link => {
                     link.addEventListener('click', function() {
@@ -75,7 +74,6 @@
     </script>
     <!-- Navbar End -->
 
-
     <!-- Page Header Start -->
     <div class="container-fluid bg-dark bg-img p-5 mb-5">
         <div class="row">
@@ -86,18 +84,16 @@
     </div>
     <!-- Page Header End -->
 
-
     <!-- About Start -->
     <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Giới thiệu</h2>
                 <h1 class="display-4 text-uppercase">Chào mừng bạn đến với Evora</h1>
             </div>
             <div class="row gx-5">
                 <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="../img/about.jpg" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 pb-5">
@@ -124,7 +120,6 @@
         </div>
     </div>
     <!-- About End -->
-
 
     <!-- Facts Start -->
     <div class="container-fluid bg-img py-5 mb-5">
@@ -168,11 +163,10 @@
     </div>
     <!-- Facts End -->
 
-
     <!-- Footer Start -->
     <div id="footer"></div>
     <script>
-        fetch('./commons/footer.html')
+        fetch('../commons/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
@@ -180,21 +174,19 @@
     </script>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
