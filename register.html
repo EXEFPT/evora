@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Evora | Đăng Ký</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="./img/evora.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div id="topbar"></div>
+    <script>
+        fetch('./commons/topbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('topbar').innerHTML = data;
+            });
+    </script>
+    <!-- Topbar End -->
+
+    <!-- Register Start -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <h3>Đăng Ký</h3>
+                        </div>
+                        <div class="card-body">
+                            <!-- Tabs -->
+                            <ul class="nav nav-tabs" id="registerTabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="customer-tab" data-bs-toggle="tab" href="#customer" role="tab" aria-controls="customer" aria-selected="true">Khách hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="organization-tab" data-bs-toggle="tab" href="#organization" role="tab" aria-controls="organization" aria-selected="false">Đơn vị tổ chức</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="registerTabsContent">
+                                <!-- Customer Tab -->
+                                <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="customer-tab">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="customer-name" class="form-label">Tên</label>
+                                            <input type="text" class="form-control" id="customer-name" placeholder="Nhập tên">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customer-email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="customer-email" placeholder="Nhập email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customer-password" class="form-label">Mật khẩu</label>
+                                            <input type="password" class="form-control" id="customer-password" placeholder="Nhập mật khẩu">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="customer-confirm-password" class="form-label">Xác nhận mật khẩu</label>
+                                            <input type="password" class="form-control" id="customer-confirm-password" placeholder="Nhập lại mật khẩu">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Đăng Ký</button>
+                                    </form>
+                                </div>
+                                <!-- Organization Tab -->
+                                <div class="tab-pane fade" id="organization" role="tabpanel" aria-labelledby="organization-tab">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="org-name" class="form-label">Tên Đơn vị</label>
+                                            <input type="text" class="form-control" id="org-name" placeholder="Nhập tên đơn vị">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="org-email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="org-email" placeholder="Nhập email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="org-password" class="form-label">Mật khẩu</label>
+                                            <input type="password" class="form-control" id="org-password" placeholder="Nhập mật khẩu">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="org-confirm-password" class="form-label">Xác nhận mật khẩu</label>
+                                            <input type="password" class="form-control" id="org-confirm-password" placeholder="Nhập lại mật khẩu">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100">Đăng Ký</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-footer text-center">
+                        <a href="login.html">Đã có tài khoản? Đăng Nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/counterup/counterup.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
