@@ -93,3 +93,109 @@
     
 })(jQuery);
 
+// Fetch JSON data sinh nhat
+fetch('data.json') 
+    .then(response => response.json())
+    .then(data => {
+        const sinhNhat = document.getElementById('sinh-nhat');
+        let rowHtml = ''; 
+        data.event.sinhnhat.forEach((item, index) => {
+            const menuItem = `
+                <div class="col-lg-6 mb-4">
+                    <div class="d-flex h-100">
+                        <div class="flex-shrink-0">
+                            <img class="img-fluid" src="./${item.image}.jpg" alt="" style="width: 150px; height: 85px;">
+                            <h4 class="bg-dark text-primary p-2 m-0">$${item.price}.00</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                            <h5 class="text-uppercase">${item.name}</h5>
+                            <span>${item.about}</span>
+                            <span>Địa chỉ: ${item.address}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            if (index % 2 === 0) {
+                rowHtml += '<div class="row">';
+            }
+            rowHtml += menuItem;
+            if (index % 2 === 1) {
+                rowHtml += '</div>';
+            }
+        
+        });
+        sinhNhat.innerHTML = rowHtml;
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+// Fetch JSON data tiec cuoi
+fetch('data.json') 
+    .then(response => response.json())
+    .then(data => {
+        const tiecCuoi = document.getElementById('tiec-cuoi');
+        let rowHtml = '';
+        data.event.tieccuoi.forEach((item, index) => {
+            const menuItem = `
+                <div class="col-lg-6 mb-4">
+                    <div class="d-flex h-100">
+                        <div class="flex-shrink-0">
+                            <img class="img-fluid" src="./${item.image}.jpg" alt="" style="width: 150px; height: 85px;">
+                            <h4 class="bg-dark text-primary p-2 m-0">$${item.price}.00</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                            <h5 class="text-uppercase">${item.name}</h5>
+                            <span>${item.about}</span>
+                            <span>Địa chỉ: ${item.address}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            if (index % 2 === 0) {
+                rowHtml += '<div class="row">';
+            }
+            rowHtml += menuItem;
+            if (index % 2 === 1) {
+                rowHtml += '</div>';
+            }
+        
+        });
+        tiecCuoi.innerHTML = rowHtml;
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+// Fetch JSON data thoi noi
+fetch('data.json') 
+    .then(response => response.json())
+    .then(data => {
+        const thoiNoi = document.getElementById('thoi-noi');
+        let rowHtml = ''; 
+        data.event.thoinoi.forEach((item, index) => {
+            const menuItem = `
+                <div class="col-lg-6 mb-4">
+                    <div class="d-flex h-100">
+                        <div class="flex-shrink-0">
+                            <img class="img-fluid" src="./${item.image}.jpg" alt="" style="width: 150px; height: 85px;">
+                            <h4 class="bg-dark text-primary p-2 m-0">$${item.price}.00</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                            <h5 class="text-uppercase">${item.name}</h5>
+                            <span>${item.about}</span>
+                            <span>Địa chỉ: ${item.address}</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            if (index % 2 === 0) {
+                rowHtml += '<div class="row">';
+            }
+            rowHtml += menuItem;
+            if (index % 2 === 1) {
+                rowHtml += '</div>';
+            }
+        
+        });
+        thoiNoi.innerHTML = rowHtml;
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+
