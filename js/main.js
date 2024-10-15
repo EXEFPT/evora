@@ -93,3 +93,110 @@
     
 })(jQuery);
 
+// Fetch JSON data menu
+function renderMenu(data, sectionId, eventType) {
+    const container = document.getElementById(sectionId);
+    if (!container) return;
+
+    let rowHtml = '';
+    data.event[eventType].forEach((item, index) => {
+        const menuItem = `
+            <div class="col-lg-6 mb-4">
+                <div class="d-flex h-100">
+                    <div class="flex-shrink-0">
+                        <img class="img-fluid" src="./${item.image}.jpg" alt="" style="width: 150px; height: 150px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                        <h5 class="text-uppercase">${item.name}</h5>
+                        <span style="
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            overflow: hidden;
+                            text-overflow: ellipsis;">${item.about}</span>
+                        <span>Địa chỉ: ${item.address}</span>
+                        <span>Kinh nghiệm: ${item.experience}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        if (index % 2 === 0) {
+            rowHtml += '<div class="row">';
+        }
+        rowHtml += menuItem;
+        if (index % 2 === 1) {
+            rowHtml += '</div>';
+        }
+    });
+
+    container.innerHTML = rowHtml;
+}
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        renderMenu(data, 'menu-sinh-nhat', 'sinhnhat');
+        renderMenu(data, 'menu-tiec-cuoi', 'tieccuoi');
+        renderMenu(data, 'menu-thoi-noi', 'thoinoi');
+        renderMenu(data, 'menu-khai-truong', 'khaitruong');
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+//Fetch JSON data home 
+
+function renderHome(data, sectionId, eventType) {
+    const homeContainer = document.getElementById(sectionId);
+    if (!homeContainer) return;
+
+    homeContainer.innerHTML = '';
+
+    let rowHtml = '';
+    const items = data.event[eventType].slice(0, 4); 
+    console.log(`Items for ${eventType}:`, items); 
+    items.forEach((item, index) => {
+        const homeItem = `
+            <div class="col-lg-6 mb-4">
+                <div class="d-flex h-100">
+                    <div class="flex-shrink-0">
+                        <img class="img-fluid" src="./${item.image}.jpg" alt="" style="width: 300px; height: 300px;">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                        <h5 class="text-uppercase" style="font-size: 2em;">${item.name}</h5>
+                        <span style="
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            font-size: 1.5em;
+                            overflow: hidden;
+                            text-overflow: ellipsis;">${item.about}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+        if (index % 2 === 0) {
+            rowHtml += '<div class="row">';
+        }
+        rowHtml += homeItem;
+        if (index % 2 === 1) {
+            rowHtml += '</div>';
+        }
+    });
+
+    
+    if (items.length % 2 !== 0) {
+        rowHtml += '</div>';
+    }
+
+    homeContainer.innerHTML = rowHtml;
+}
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); 
+        renderHome(data, 'sinh-nhat', 'sinhnhat');
+        renderHome(data, 'tiec-cuoi', 'tieccuoi');
+        renderHome(data, 'thoi-noi', 'thoinoi');
+        renderHome(data, 'khai-truong', 'khaitruong');
+    })
+    .catch(error => console.error('Error fetching data:', error));
