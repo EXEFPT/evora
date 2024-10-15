@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evora | Chi tiết sự kiện</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Favicon -->
+    <link href="./img/evora.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      href="./lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Topbar Start -->
+    <div id="topbar"></div>
+    <script>
+      fetch("./commons/topbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("topbar").innerHTML = data;
+        });
+    </script>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div id="navbar"></div>
+    <script>
+      fetch("./commons/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+
+          // Determine the current page
+          const currentPage = window.location.pathname.split("/").pop();
+
+          // Add active class to the corresponding nav link
+          const navLinks = document.querySelectorAll(".nav-item.nav-link");
+          navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+
+          // Add click event listeners to update active class on click
+          navLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+              navLinks.forEach((nav) => nav.classList.remove("active"));
+              this.classList.add("active");
+            });
+          });
+        });
+    </script>
+    <!-- Navbar End -->
+
+    <div id="event-detail" class="container"></div>
+
+    <!-- Event Registration Form Start -->
+    <div class="container mt-5">
+      <div class="card p-5">
+        <div class="card-body">
+          <h2 style="text-align: center; margin-bottom: 30px">
+            Đăng ký sự kiện
+          </h2>
+          <form>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="name" class="form-label">Tên</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="phone" class="form-label">Số điện thoại</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="event-type" class="form-label">Loại sự kiện</label>
+                <select
+                  id="event-type"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  required
+                >
+                  <!-- Options will be populated by JavaScript -->
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="address" class="form-label">Địa chỉ tổ chức</label>
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="participants" class="form-label"
+                  >Số lượng người tham gia</label
+                >
+                <input
+                  type="number"
+                  id="participants"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  min="2"
+                  value="2"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="datetime" class="form-label"
+                  >Thời gian diễn ra</label
+                >
+                <input
+                  type="datetime-local"
+                  id="datetime"
+                  class="form-control bg-light border-2 px-4"
+                  placeholder="Thời gian diễn ra"
+                  style="height: 55px"
+                  required
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="price" class="form-label">Giá</label>
+                <input
+                  type="text"
+                  id="price"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  readonly
+                />
+              </div>
+              <div class="col-sm-6">
+                <label for="total-price" class="form-label">Thành tiền</label>
+                <input
+                  type="text"
+                  id="total-price"
+                  class="form-control bg-light border-2 px-4"
+                  style="height: 55px"
+                  readonly
+                />
+              </div>
+
+              <div class="col-sm-12">
+                <button
+                  class="btn btn-primary border-inner w-100 py-3"
+                  type="submit"
+                >
+                  Đăng ký
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Event Registration Form End -->
+
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <script>
+      fetch("./commons/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/counterup/counterup.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./js/event_detail.js"></script>
+    <script>
+      // Function to format price
+      function formatPrice(price) {
+        return new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" })
+          .format(price)
+          .replace("₫", "đ / người");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const eventTypeSelect = document.getElementById("event-type");
+        const eventDetailContainer = document.getElementById("event-detail");
+
+        // Fetch event details and populate event types
+        fetch("./data/event_details.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const eventTypes = data.map((event) => event.type);
+            eventTypes.forEach((type) => {
+              const option = document.createElement("option");
+              option.value = type;
+              option.textContent = type;
+              eventTypeSelect.appendChild(option);
+            });
+
+            // Populate event details
+            eventDetailContainer.innerHTML = data
+              .map(
+                (event) => `
+                <div class="event">
+                  <h3>${event.name}</h3>
+                  <p>${event.description}</p>
+                </div>
+              `
+              )
+              .join("");
+          });
+
+        const priceInput = document.getElementById("price");
+        const priceValue = 100000; // Example price value
+        priceInput.value = formatPrice(priceValue);
+
+        const participantsInput = document.getElementById("participants");
+        const totalPriceInput = document.getElementById("total-price");
+
+        participantsInput.addEventListener("input", function () {
+          let participants = parseInt(participantsInput.value) || 0;
+          if (participants < 2) {
+            participants = 2;
+            participantsInput.value = 2;
+          }
+          const totalPrice = participants * priceValue;
+          totalPriceInput.value = formatPrice(totalPrice);
+        });
+
+        // Test cases
+        function runTests() {
+          console.log("Running tests...");
+
+          // Test 1: Check initial price value
+          console.assert(
+            priceInput.value === formatPrice(priceValue),
+            "Test 1 Failed"
+          );
+
+          // Test 2: Check total price calculation for 5 participants
+          participantsInput.value = 5;
+          participantsInput.dispatchEvent(new Event("input"));
+          console.assert(
+            totalPriceInput.value === formatPrice(5 * priceValue),
+            "Test 2 Failed"
+          );
+
+          // Test 3: Check total price calculation for 0 participants
+          participantsInput.value = 0;
+          participantsInput.dispatchEvent(new Event("input"));
+          console.assert(
+            totalPriceInput.value === formatPrice(2 * priceValue),
+            "Test 3 Failed"
+          );
+
+          console.log("All tests passed!");
+        }
+
+        runTests();
+      });
+    </script>
+  </body>
+</html>
