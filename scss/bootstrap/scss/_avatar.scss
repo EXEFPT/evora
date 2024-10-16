@@ -1,0 +1,38 @@
+.avatar-container {
+    position: relative;
+    display: inline-block;
+
+    /* Avatar Image */
+    .avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    /* Dropdown Menu */
+    // .dropdown {
+    //     display: none;
+    //     position: absolute;
+    //     top: 60px; // Adjust for avatar height
+    //     right: 0;
+    //     background-color: white;
+    //     border: 1px solid #ddd;
+    //     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    //     min-width: 150px;
+    //     z-index: 1;
+
+    //     /* Dropdown Menu Items */
+    //     a {
+    //         padding: 12px 16px;
+    //         text-decoration: none;
+    //         display: block;
+    //         color: black;
+    //         font-size: 14px;
+
+    //         &:hover {
+    //             background-color: #f1f1f1;
+    //         }
+    //     }
+    // }
+}
