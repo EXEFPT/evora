@@ -1,1366 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Evora | Trang chủ</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Evora | Trang chủ</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        <!-- Favicon -->
-        <link href="./img/evora.ico" rel="icon" />
+    <!-- Favicon -->
+    <link href="./img/evora.ico" rel="icon" />
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap"
-            rel="stylesheet"
-        />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Icon Font Stylesheet -->
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-            rel="stylesheet"
-        />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-        <!-- Libraries Stylesheet -->
-        <link
-            href="./lib/owlcarousel/assets/owl.carousel.min.css"
-            rel="stylesheet"
-        />
+    <!-- Libraries Stylesheet -->
+    <link
+      href="./lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
 
-        <!-- Template Stylesheet -->
-        <link href="./css/style.css" rel="stylesheet" />
-    </head>
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
 
-    <body>
-        <!-- Topbar Start -->
-        <div id="topbar"></div>
-        <script>
-            fetch("./commons/topbar.html")
-                .then((response) => response.text())
-                .then((data) => {
-                    document.getElementById("topbar").innerHTML = data;
-                });
-        </script>
-        <!-- Topbar End -->
+  <body>
+    <!-- Topbar Start -->
+    <div id="topbar"></div>
+    <script>
+      fetch("./commons/topbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("topbar").innerHTML = data;
+        });
+    </script>
+    <!-- Topbar End -->
 
-        <!-- Navbar Start -->
-        <div id="navbar"></div>
-        <script>
-            fetch("./commons/navbar-logined.html")
-                .then((response) => response.text())
-                .then((data) => {
-                    document.getElementById("navbar").innerHTML = data;
-                });
-        </script>
-        <!-- Navbar End -->
+    <!-- Navbar Start -->
+    <div id="navbar"></div>
+    <script>
+      fetch("./commons/navbar-logined.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <!-- Navbar End -->
 
-        <!-- Hero Start -->
-        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-            <div class="container py-5">
-                <div class="row justify-content-start">
-                    <div class="col-lg-8 text-center text-lg-start">
-                        <h1 class="font-secondary text-primary mb-4">
-                            Chạm nhanh - Sự kiện liền
-                        </h1>
-                        <h1 class="display-1 text-uppercase text-white mb-4">
-                            Evora
-                        </h1>
-                        <h1 class="text-uppercase text-white">
-                            Nền tảng đặt lịch trực tuyến
-                        </h1>
-                        <div
-                            class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
-                        >
-                            <a
-                                href="about.html"
-                                class="btn btn-primary border-inner py-3 px-5 me-5"
-                                >Xem thêm</a
-                            >
-                        </div>
-                    </div>
-                </div>
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+      <div class="container py-5">
+        <div class="row justify-content-start">
+          <div class="col-lg-8 text-center text-lg-start">
+            <h1 class="font-secondary text-primary mb-4">
+              Chạm nhanh - Sự kiện liền
+            </h1>
+            <h1 class="display-1 text-uppercase text-white mb-4">Evora</h1>
+            <h1 class="text-uppercase text-white">
+              Nền tảng đặt lịch trực tuyến
+            </h1>
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
+            >
+              <a
+                href="about.html"
+                class="btn btn-primary border-inner py-3 px-5 me-5"
+                >Xem thêm</a
+              >
             </div>
+          </div>
         </div>
-        <!-- Hero End -->
+      </div>
+    </div>
+    <!-- Hero End -->
 
-        <!-- About Start -->
-        <!-- <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Giới thiệu</h2>
-                <h1 class="display-4 text-uppercase">Chào mừng bạn đến với Evora</h1>
-            </div>
-            <div class="row gx-5">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="./img/about.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-5">
-                    <h4 class="mb-4">Evora - Nền tảng kết nối và đặt chỗ sự kiện trực tuyến nhanh chóng, tiện lợi.</h4>
-                    <p class="mb-5">Website giúp khách hàng tìm kiếm và kết nối nhanh chóng với các đơn vị tổ chức sự kiện thông qua hình thức đặt chỗ trực tuyến. Với Evora, người dùng dễ dàng truy cập thông tin chi tiết về từng đơn vị tổ chức, bao gồm tên, hình ảnh, số hotline, đánh giá từ khách hàng và các mức giá dịch vụ. Người dùng có thể so sánh các lựa chọn, đảm bảo dịch vụ chất lượng phù hợp với nhu cầu. Được thiết kế dành riêng cho thế hệ Gen Z, Evora mang lại sự tiện lợi, tốc độ và trải nghiệm công nghệ tối ưu.</p>
-                    <div class="row g-5">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
-                                <i class="fa fa-heartbeat fa-2x text-white"></i>
-                            </div>
-                            <h4 class="text-uppercase">Nhanh chóng</h4>
-                            <p class="mb-0">Evora cung cấp giao diện thân thiện và dễ sử dụng, cho phép khách hàng nhanh chóng tìm kiếm, so sánh và đặt chỗ các đơn vị tổ chức sự kiện chỉ với vài bước đơn giản.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4" style="width: 90px; height: 90px;">
-                                <i class="fa fa-award fa-2x text-white"></i>
-                            </div>
-                            <h4 class="text-uppercase">Uy tín</h4>
-                            <p class="mb-0">Evora hợp tác với các đơn vị tổ chức sự kiện uy tín, được đánh giá cao bởi cộng đồng người dùng giúp đảm bảo tính minh bạch và độ tin cậy của dịch vụ.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-        <!-- About End -->
-
-        <!-- Facts Start -->
-        <!-- <div class="container-fluid bg-img py-5 mb-5">
-        <div class="container py-5">
-            <div class="row gx-5 gy-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Đơn vị tổ chức</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Sự kiện hoàn thành</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-mug-hot text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Khách hàng hài lòng</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-        <!-- Facts End -->
-
-        <!-- Products Start -->
-        <div class="container-fluid about py-5">
-            <div class="container">
-                <div
-                    class="section-title position-relative text-center mx-auto mb-5 pb-3"
-                    style="max-width: 600px"
-                >
-                    <h2 class="text-primary font-secondary">
-                        Danh sách Sự kiện và Giá cả
-                    </h2>
-                    <h1 class="display-4 text-uppercase">Khám phá ngay</h1>
-                </div>
-                <div class="tab-class text-center">
-                    <ul
-                        class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5"
-                    >
-                        <li class="nav-item">
-                            <a
-                                class="nav-link text-white active"
-                                data-bs-toggle="pill"
-                                href="#tab-1"
-                                >Sinh nhật</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link text-white"
-                                data-bs-toggle="pill"
-                                href="#tab-2"
-                                >Đám cưới</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link text-white"
-                                data-bs-toggle="pill"
-                                href="#tab-3"
-                                >Thôi nôi</a
-                            >
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-3">
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Festina Lente
-                                            </h5>
-                                            <span
-                                                >Chuyên các món Á Âu, Combo giá
-                                                rẻ, Buffet và rượu vang Nằm ngay
-                                                trung tâm Tp. Quy Nhơn
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Kubo Quy Nhon
-                                            </h5>
-                                            <span
-                                                >KUBO đem đến cho trẻ nhiều trò
-                                                chơi thú vị, sáng tạo và phù hợp
-                                                với độ tuổi. ✌️Một trải nghiệm
-                                                vui</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Thảo Điền Restaurant
-                                            </h5>
-                                            <span
-                                                >Thao Dien Restaurant - Good
-                                                food Good times Thao Dien
-                                                Restaurant đáp ứng đa dạng mô
-                                                hình tiệc</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Lotteria Go Quy Nhơn
-                                            </h5>
-                                            <span
-                                                >Tổ chức sinh nhật tại Lotteria
-                                                mang đến không gian vui nhộn,
-                                                với nhiều hoạt động giải trí và
-                                                tiện ích cho các bé và gia
-                                                đình.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Jollibee GO Quy Nhơn
-                                            </h5>
-                                            <span
-                                                >Dịch vụ tổ chức tiệc sinh nhật
-                                                tại Jollibee là một trong những
-                                                lựa chọn phổ biến dành cho các
-                                                gia đình, đặc biệt là trẻ em,
-                                                nhờ vào sự kết hợp giữa không
-                                                gian vui nhộn, món ăn ngon và
-                                                nhiều hoạt động giải trí</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                FengHuang Chinese Cuisine
-                                            </h5>
-                                            <span
-                                                >Nhà hàng Fenghuang phục vụ
-                                                những món ăn trứ danh của ẩm
-                                                thực Trung Hoa tại Quy
-                                                Nhơn.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-3">
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Hữu Duyên Wedding Decor & Event
-                                            </h5>
-                                            <span
-                                                >Dịch vụ đa dạng, nhằm tạo ra
-                                                một ngày cưới hoàn hảo và đáng
-                                                nhớ cho cô dâu, chú rể cũng như
-                                                khách mời.
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Tiệc Cưới Ngọc Sang
-                                            </h5>
-                                            <span
-                                                >Chuyên trang trí gia tiên, tiệc
-                                                cưới. Các sự kiện trong và ngoài
-                                                trời.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Nguyễn Thân Wedding
-                                            </h5>
-                                            <span
-                                                >Tổ chức tiệc tại nhà hàng,
-                                                khách sạn sang trọng hoặc ngoài
-                                                trời như bãi biển, sân vườn, tạo
-                                                ra một không gian lễ cưới theo
-                                                phong cách cá nhân.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Dũng Hảo Wedding
-                                            </h5>
-                                            <span
-                                                >Trang Trí Rạp Cưới, Mâm quả
-                                                cưới đa dạng, bao gồm từ việc
-                                                chọn địa điểm, trang trí không
-                                                gian đến thực đơn và các hoạt
-                                                động giải trí.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Thiên Nga Wedding
-                                            </h5>
-                                            <span
-                                                >Thiên Nga Wedding Decor -
-                                                Chuyên trang trí Gia Tiên, Tiệc
-                                                Cưới. Hân hạnh phục vụ Quý
-                                                Khách.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                DNX Wedding
-                                            </h5>
-                                            <span
-                                                >We are Wedding/Event Planners
-                                                Wedding/Event Decoration Team
-                                                Photographers and
-                                                Videographers</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-3">
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Mâm Cúng Phước Huy
-                                            </h5>
-                                            <span
-                                                >Với các lễ vật truyền thống và
-                                                phong cách trang trí màu hồng
-                                                nhẹ nhàng, dịch vụ mâm cúng thôi
-                                                nôi cho bé gái mang đến sự tươi
-                                                mới và ngọt ngào cho buổi
-                                                lễ.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Mâm Cúng Hưng Thịnh
-                                            </h5>
-                                            <span
-                                                >Dịch vụ mâm cúng thôi nôi cho
-                                                bé trai thường được thiết kế đặc
-                                                biệt với các lễ vật như gà luộc,
-                                                xôi, chè và bánh trái</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Mâm cúng Quy Nhơn
-                                            </h5>
-                                            <span
-                                                >Ngoài việc chuẩn bị các lễ vật
-                                                truyền thống, dịch vụ này còn
-                                                cung cấp bài văn khấn thôi nôi
-                                                theo phong tục, giúp gia đình dễ
-                                                dàng thực hiện nghi lễ</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                Mâm Quả Cúng Bé Bự Quy Nhơn
-                                            </h5>
-                                            <span
-                                                >Dịch vụ hướng đến những gia
-                                                đình muốn tổ chức lễ thôi nôi
-                                                nhỏ gọn nhưng vẫn đầy đủ các lễ
-                                                vật quan trọng</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                mâm cúng quy nhơn mẹ nâu
-                                            </h5>
-                                            <span
-                                                >Dịch vụ cung cấp mâm cúng thôi
-                                                nôi phù hợp với các phong tục
-                                                vùng miền khác nhau, từ lễ vật
-                                                đến cách bài trí.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="d-flex h-100">
-                                        <div class="flex-shrink-0">
-                                            <img
-                                                class="img-fluid"
-                                                src="https://placehold.co/150x85"
-                                                alt=""
-                                                style="
-                                                    width: 150px;
-                                                    height: 85px;
-                                                "
-                                            />
-                                            <h4
-                                                class="bg-dark text-primary p-2 m-0"
-                                            >
-                                                $99.00
-                                            </h4>
-                                        </div>
-                                        <div
-                                            class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4"
-                                        >
-                                            <h5 class="text-uppercase">
-                                                mâm cúng hồng nhung
-                                            </h5>
-                                            <span
-                                                >Mâm cúng được chuẩn bị cẩn
-                                                thận, giúp gia đình tổ chức lễ
-                                                thôi nôi cho bé một cách trang
-                                                trọng và đúng phong tục truyền
-                                                thống.</span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Products End -->
-
-        <!-- Service Start -->
+    <!-- Products Start -->
+    <div class="container-fluid about py-5">
+      <div class="container">
         <div
-            class="container-fluid service position-relative px-5 mt-5"
-            style="margin-bottom: 135px"
+          class="section-title position-relative text-center mx-auto mb-5 pb-3"
+          style="max-width: 600px"
         >
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-4 col-md-6">
-                        <div
-                            class="bg-primary border-inner text-center text-white p-5"
-                        >
-                            <h4 class="text-uppercase mb-3">
-                                Tổ chức Sinh nhật
-                            </h4>
-                            <p>
-                                Biến mỗi buổi tiệc sinh nhật thành một khoảnh
-                                khắc đáng nhớ với dịch vụ tổ chức sự kiện chuyên
-                                nghiệp của chúng tôi. Từ trang trí sáng tạo, âm
-                                nhạc sôi động đến ẩm thực đa dạng, chúng tôi đảm
-                                bảo mang đến niềm vui trọn vẹn cho bạn và người
-                                thân.
-                            </p>
-                            <a class="text-uppercase text-dark" href=""
-                                >Read More <i class="bi bi-arrow-right"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div
-                            class="bg-primary border-inner text-center text-white p-5"
-                        >
-                            <h4 class="text-uppercase mb-3">
-                                Tổ chức Đám cưới
-                            </h4>
-                            <p>
-                                Mỗi đám cưới là một câu chuyện tình yêu độc đáo,
-                                và chúng tôi sẽ giúp bạn biến giấc mơ thành hiện
-                                thực. Từ ý tưởng trang trí lãng mạn, thực đơn
-                                tinh tế đến việc chăm sóc từng chi tiết nhỏ
-                                nhất, chúng tôi cam kết mang đến ngày trọng đại
-                                hoàn hảo cho bạn.
-                            </p>
-                            <a class="text-uppercase text-dark" href=""
-                                >Read More <i class="bi bi-arrow-right"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div
-                            class="bg-primary border-inner text-center text-white p-5"
-                        >
-                            <h4 class="text-uppercase mb-3">
-                                Tổ chức Thôi nôi
-                            </h4>
-                            <p>
-                                Đánh dấu cột mốc quan trọng trong cuộc đời bé
-                                yêu, chúng tôi sẽ giúp bạn tổ chức một buổi lễ
-                                ấm cúng và ý nghĩa. Từ trang trí sinh động, thực
-                                đơn hấp dẫn đến các hoạt động vui chơi thú vị,
-                                chúng tôi cam kết mang đến cho bạn một trải
-                                nghiệm trọn vẹn và đáng nhớ.
-                            </p>
-                            <a class="text-uppercase text-dark" href=""
-                                >Read More <i class="bi bi-arrow-right"></i
-                            ></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 col-md-6 text-center">
-                        <h1 class="text-uppercase text-light mb-4">
-                            Giảm 30% cho khách hàng mới
-                        </h1>
-                        <a
-                            href=""
-                            class="btn btn-primary border-inner py-3 px-5"
-                            >Đặt lịch ngay</a
-                        >
-                    </div>
-                </div>
-            </div>
+          <h2 class="text-primary font-secondary">Danh sách sự kiện nổi bật</h2>
+          <h1 class="display-4 text-uppercase">Khám phá ngay</h1>
         </div>
-        <!-- Service Start -->
-
-        <!-- Team Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div
-                    class="section-title position-relative text-center mx-auto mb-5 pb-3"
-                    style="max-width: 600px"
-                >
-                    <h2 class="text-primary font-secondary">Đơn vị tổ chức</h2>
-                    <h1 class="display-4 text-uppercase">
-                        Uy tín & Chất lượng
-                    </h1>
+        <div class="tab-class text-center">
+          <ul
+            class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                data-bs-toggle="pill"
+                href="#tab-1"
+                >Sinh nhật</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2"
+                >Đám cưới</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3"
+                >Thôi nôi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-4"
+                >Khai Trương</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <div class="row g-3">
+                <div id="sinh-nhat">
+                  <!-- Dynamic content will be inserted here -->
                 </div>
-                <div class="row g-5">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="position-relative overflow-hidden">
-                                <img
-                                    class="img-fluid w-100"
-                                    src="./img/team-1.jpg"
-                                    alt=""
-                                />
-                                <div
-                                    class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
-                                >
-                                    <div
-                                        class="d-flex align-items-center justify-content-start"
-                                    >
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-twitter fw-normal"
-                                            ></i
-                                        ></a>
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-facebook-f fw-normal"
-                                            ></i
-                                        ></a>
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-linkedin-in fw-normal"
-                                            ></i
-                                        ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-dark border-inner text-center p-4">
-                                <h4 class="text-uppercase text-primary">
-                                    Full Name
-                                </h4>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="position-relative overflow-hidden">
-                                <img
-                                    class="img-fluid w-100"
-                                    src="./img/team-2.jpg"
-                                    alt=""
-                                />
-                                <div
-                                    class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
-                                >
-                                    <div
-                                        class="d-flex align-items-center justify-content-start"
-                                    >
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-twitter fw-normal"
-                                            ></i
-                                        ></a>
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-facebook-f fw-normal"
-                                            ></i
-                                        ></a>
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-linkedin-in fw-normal"
-                                            ></i
-                                        ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-dark border-inner text-center p-4">
-                                <h4 class="text-uppercase text-primary">
-                                    Full Name
-                                </h4>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="team-item">
-                            <div class="position-relative overflow-hidden">
-                                <img
-                                    class="img-fluid w-100"
-                                    src="./img/team-3.jpg"
-                                    alt=""
-                                />
-                                <div
-                                    class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center"
-                                >
-                                    <div
-                                        class="d-flex align-items-center justify-content-start"
-                                    >
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-twitter fw-normal"
-                                            ></i
-                                        ></a>
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-facebook-f fw-normal"
-                                            ></i
-                                        ></a>
-                                        <a
-                                            class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1"
-                                            href="#"
-                                            ><i
-                                                class="fab fa-linkedin-in fw-normal"
-                                            ></i
-                                        ></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-dark border-inner text-center p-4">
-                                <h4 class="text-uppercase text-primary">
-                                    Full Name
-                                </h4>
-                                <p class="text-white m-0">Designation</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-        <!-- Team End -->
-
-        <!-- Offer Start -->
-        <div class="container-fluid bg-offer my-5 py-5">
-            <div class="container py-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-7 text-center">
-                        <div
-                            class="section-title position-relative text-center mx-auto mb-4 pb-3"
-                            style="max-width: 600px"
-                        >
-                            <h2 class="text-primary font-secondary">Hot !</h2>
-                            <h1 class="display-4 text-uppercase text-white">
-                                Gói Sự kiện đặc biệt
-                            </h1>
-                        </div>
-                        <p class="text-white mb-4">
-                            Trải nghiệm Gói Sự kiện Đặc biệt, nơi mọi chi tiết
-                            đều được chăm chút tỉ mỉ để biến dịp lễ của bạn
-                            thành một kỷ niệm không thể quên! Với trang trí sang
-                            trọng, ẩm thực tinh tế và các hoạt động giải trí hấp
-                            dẫn, chúng tôi cam kết mang đến một bữa tiệc tuyệt
-                            vời, khiến mọi khách mời đều phải trầm trồ. Hãy để
-                            chúng tôi cùng bạn tổ chức một sự kiện đầy ấn tượng!
-                        </p>
-                        <a
-                            href=""
-                            class="btn btn-primary border-inner py-3 px-5 me-3"
-                            >Đặt lịch ngay</a
-                        >
-                        <a href="" class="btn btn-dark border-inner py-3 px-5"
-                            >Xem thêm</a
-                        >
-                    </div>
+            <div id="tab-2" class="tab-pane fade show p-0 active">
+              <div class="row g-3">
+                <div id="tiec-cuoi">
+                  <!-- Dynamic content will be inserted here -->
                 </div>
+              </div>
             </div>
-        </div>
-        <!-- Offer End -->
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div
-                    class="section-title position-relative text-center mx-auto mb-5 pb-3"
-                    style="max-width: 600px"
-                >
-                    <h2 class="text-primary font-secondary">Đánh giá</h2>
-                    <h1 class="display-4 text-uppercase">
-                        Khách hàng phản hồi!!!
-                    </h1>
+            <div id="tab-3" class="tab-pane fade show p-0 active">
+              <div class="row g-3">
+                <div id="thoi-noi">
+                  <!-- Dynamic content will be inserted here -->
                 </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-1.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Nguyễn Văn A
-                                </h4>
-                                <span>Chủ doanh nghiệp</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Tôi rất hài lòng với dịch vụ tổ chức sinh nhật của
-                            Evora. Mọi thứ đều diễn ra suôn sẻ và chuyên nghiệp!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-2.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Trần Thị B
-                                </h4>
-                                <span>Nhân viên văn phòng</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Lễ cưới của tôi thật hoàn hảo nhờ sự tổ chức chu đáo
-                            của đội ngũ Evora. Tôi rất cảm ơn họ!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-3.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Phạm Văn C
-                                </h4>
-                                <span>Giáo viên</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Dịch vụ tổ chức thôi nôi rất chuyên nghiệp! Các bé
-                            và khách mời đều rất thích thú. Cảm ơn Evora!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-4.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Lê Thị D
-                                </h4>
-                                <span>Doanh nhân</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Evora đã giúp tôi tổ chức một sự kiện hoàn hảo cho
-                            công ty. Đội ngũ rất tận tâm và sáng tạo!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-1.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Nguyễn Thị E
-                                </h4>
-                                <span>Nhân viên tiếp thị</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Tôi đã tổ chức sinh nhật cho con trai và mọi người
-                            đều rất vui! Dịch vụ tuyệt vời!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-2.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Đỗ Văn F
-                                </h4>
-                                <span>Chủ hộ kinh doanh</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Dịch vụ tổ chức sự kiện của Evora rất chất lượng và
-                            đáng tin cậy. Tôi sẽ tiếp tục hợp tác!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-3.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Vũ Thị G
-                                </h4>
-                                <span>Người dùng</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Buổi tiệc thôi nôi của con gái tôi thật hoàn hảo!
-                            Cảm ơn Evora đã tạo nên những kỷ niệm đẹp!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-4.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Trần Văn H
-                                </h4>
-                                <span>Kỹ sư</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Hãy để Evora tổ chức sự kiện của bạn! Họ rất chuyên
-                            nghiệp và sáng tạo!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-2.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Ngô Thị I
-                                </h4>
-                                <span>Người mẫu</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Tôi đã có một lễ cưới như mơ nhờ Evora. Cảm ơn đội
-                            ngũ đã làm cho ngày trọng đại của tôi thật hoàn hảo!
-                        </p>
-                    </div>
-                    <div
-                        class="testimonial-item bg-dark text-white border-inner p-4"
-                    >
-                        <div class="d-flex align-items-center mb-3">
-                            <img
-                                class="img-fluid flex-shrink-0"
-                                src="./img/testimonial-4.jpg"
-                                style="width: 60px; height: 60px"
-                            />
-                            <div class="ps-3">
-                                <h4 class="text-primary text-uppercase mb-1">
-                                    Lê Văn J
-                                </h4>
-                                <span>Nhà báo</span>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            Dịch vụ hoàn hảo và đáng tin cậy! Tôi sẽ giới thiệu
-                            Evora cho mọi người!
-                        </p>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div id="tab-4" class="tab-pane fade show p-0 active">
+              <div class="row g-3">
+                <div id="khai-truong">
+                  <!-- Dynamic content will be inserted here -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Testimonial End -->
+        <div
+          class="d-flex align-items-center justify-content-center justify-content-lg-center pt-5"
+        >
+          <a
+            href="menu.html"
+            class="btn btn-primary border-inner py-3 px-5 me-5"
+            >Xem tất cả</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Products End -->
 
-        <!-- Footer Start -->
-        <div id="footer"></div>
-        <script>
-            fetch("./commons/footer.html")
-                .then((response) => response.text())
-                .then((data) => {
-                    document.getElementById("footer").innerHTML = data;
-                });
-        </script>
-        <!-- Footer End -->
+    <!-- Service Start -->
+    <div
+      class="container-fluid service position-relative px-5 mt-5"
+      style="margin-bottom: 135px"
+    >
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="bg-primary border-inner text-center text-white p-5">
+              <h4 class="text-uppercase mb-3">Tổ chức Sinh nhật</h4>
+              <p>
+                Biến mỗi buổi tiệc sinh nhật thành một khoảnh khắc đáng nhớ với
+                dịch vụ tổ chức sự kiện chuyên nghiệp của chúng tôi. Từ trang
+                trí sáng tạo, âm nhạc sôi động đến ẩm thực đa dạng, chúng tôi
+                đảm bảo mang đến niềm vui trọn vẹn cho bạn và người thân.
+              </p>
+              <a class="text-uppercase text-dark" href=""
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="bg-primary border-inner text-center text-white p-5">
+              <h4 class="text-uppercase mb-3">Tổ chức Đám cưới</h4>
+              <p>
+                Mỗi đám cưới là một câu chuyện tình yêu độc đáo, và chúng tôi sẽ
+                giúp bạn biến giấc mơ thành hiện thực. Từ ý tưởng trang trí lãng
+                mạn, thực đơn tinh tế đến việc chăm sóc từng chi tiết nhỏ nhất,
+                chúng tôi cam kết mang đến ngày trọng đại hoàn hảo cho bạn.
+              </p>
+              <a class="text-uppercase text-dark" href=""
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="bg-primary border-inner text-center text-white p-5">
+              <h4 class="text-uppercase mb-3">Tổ chức Thôi nôi</h4>
+              <p>
+                Đánh dấu cột mốc quan trọng trong cuộc đời bé yêu, chúng tôi sẽ
+                giúp bạn tổ chức một buổi lễ ấm cúng và ý nghĩa. Từ trang trí
+                sinh động, thực đơn hấp dẫn đến các hoạt động vui chơi thú vị,
+                chúng tôi cam kết mang đến cho bạn một trải nghiệm trọn vẹn và
+                đáng nhớ.
+              </p>
+              <a class="text-uppercase text-dark" href=""
+                >Read More <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-6 text-center">
+            <h1 class="text-uppercase text-light mb-4">
+              Giảm 30% cho khách hàng mới
+            </h1>
+            <a href="" class="btn btn-primary border-inner py-3 px-5"
+              >Đặt lịch ngay</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Start -->
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"
-            ><i class="bi bi-arrow-up"></i
-        ></a>
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div
+          class="section-title position-relative text-center mx-auto mb-5 pb-3"
+          style="max-width: 600px"
+        >
+          <h2 class="text-primary font-secondary">Đơn vị tổ chức</h2>
+          <h1 class="display-4 text-uppercase">Uy tín & Chất lượng</h1>
+        </div>
+        <div id="team-container" class="row g-5"></div>
+      </div>
+    </div>
+    <!-- Team End -->
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="./lib/easing/easing.min.js"></script>
-        <script src="./lib/waypoints/waypoints.min.js"></script>
-        <script src="./lib/counterup/counterup.min.js"></script>
-        <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Offer Start -->
+    <div class="container-fluid bg-offer my-5 py-5">
+      <div class="container py-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="col-lg-7 text-center">
+            <div
+              class="section-title position-relative text-center mx-auto mb-4 pb-3"
+              style="max-width: 600px"
+            >
+              <h2 class="text-primary font-secondary">Hot !</h2>
+              <h1 class="display-4 text-uppercase text-white">
+                Gói Sự kiện đặc biệt
+              </h1>
+            </div>
+            <p class="text-white mb-4">
+              Trải nghiệm Gói Sự kiện Đặc biệt, nơi mọi chi tiết đều được chăm
+              chút tỉ mỉ để biến dịp lễ của bạn thành một kỷ niệm không thể
+              quên! Với trang trí sang trọng, ẩm thực tinh tế và các hoạt động
+              giải trí hấp dẫn, chúng tôi cam kết mang đến một bữa tiệc tuyệt
+              vời, khiến mọi khách mời đều phải trầm trồ. Hãy để chúng tôi cùng
+              bạn tổ chức một sự kiện đầy ấn tượng!
+            </p>
+            <a href="" class="btn btn-primary border-inner py-3 px-5 me-3"
+              >Đặt lịch ngay</a
+            >
+            <a href="" class="btn btn-dark border-inner py-3 px-5">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Offer End -->
 
-        <!-- Template Javascript -->
-        <script src="./js/main.js"></script>
-    </body>
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div
+          class="section-title position-relative text-center mx-auto mb-5 pb-3"
+          style="max-width: 600px"
+        >
+          <h2 class="text-primary font-secondary">Đánh giá</h2>
+          <h1 class="display-4 text-uppercase">Khách hàng phản hồi!!!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-1.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Nguyễn Văn A</h4>
+                <span>Chủ doanh nghiệp</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Tôi rất hài lòng với dịch vụ tổ chức sinh nhật của Evora. Mọi thứ
+              đều diễn ra suôn sẻ và chuyên nghiệp!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-2.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Trần Thị B</h4>
+                <span>Nhân viên văn phòng</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Lễ cưới của tôi thật hoàn hảo nhờ sự tổ chức chu đáo của đội ngũ
+              Evora. Tôi rất cảm ơn họ!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-3.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Phạm Văn C</h4>
+                <span>Giáo viên</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Dịch vụ tổ chức thôi nôi rất chuyên nghiệp! Các bé và khách mời
+              đều rất thích thú. Cảm ơn Evora!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-4.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Lê Thị D</h4>
+                <span>Doanh nhân</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Evora đã giúp tôi tổ chức một sự kiện hoàn hảo cho công ty. Đội
+              ngũ rất tận tâm và sáng tạo!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-1.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Nguyễn Thị E</h4>
+                <span>Nhân viên tiếp thị</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Tôi đã tổ chức sinh nhật cho con trai và mọi người đều rất vui!
+              Dịch vụ tuyệt vời!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-2.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Đỗ Văn F</h4>
+                <span>Chủ hộ kinh doanh</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Dịch vụ tổ chức sự kiện của Evora rất chất lượng và đáng tin cậy.
+              Tôi sẽ tiếp tục hợp tác!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-3.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Vũ Thị G</h4>
+                <span>Người dùng</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Buổi tiệc thôi nôi của con gái tôi thật hoàn hảo! Cảm ơn Evora đã
+              tạo nên những kỷ niệm đẹp!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-4.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Trần Văn H</h4>
+                <span>Kỹ sư</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Hãy để Evora tổ chức sự kiện của bạn! Họ rất chuyên nghiệp và sáng
+              tạo!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-2.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Ngô Thị I</h4>
+                <span>Người mẫu</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Tôi đã có một lễ cưới như mơ nhờ Evora. Cảm ơn đội ngũ đã làm cho
+              ngày trọng đại của tôi thật hoàn hảo!
+            </p>
+          </div>
+          <div class="testimonial-item bg-dark text-white border-inner p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                class="img-fluid flex-shrink-0"
+                src="./img/testimonial-4.jpg"
+                style="width: 60px; height: 60px"
+              />
+              <div class="ps-3">
+                <h4 class="text-primary text-uppercase mb-1">Lê Văn J</h4>
+                <span>Nhà báo</span>
+              </div>
+            </div>
+            <p class="mb-0">
+              Dịch vụ hoàn hảo và đáng tin cậy! Tôi sẽ giới thiệu Evora cho mọi
+              người!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <script>
+      fetch("./commons/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/counterup/counterup.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/organizer.js"></script>
+  </body>
 </html>
